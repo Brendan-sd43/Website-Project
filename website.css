@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+NZ+Basic:wght@100..400&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+body {
+    /* background-color: black; */
+    background-image: url("images/octane background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    cursor: url('images/cursor.cur'), auto;
+    overflow-x: hidden;
+    
+}
+body::before {
+   content: ""; /* render a pseudo-element, like a ::before */
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+html, body {
+  height: auto;
+}
+a,form,button {
+  cursor: url('images/cursor2.cur'), auto;
+}
+a {
+  color: red;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+  width: 100%;
+  height: 45px;
+  z-index: 1000;
+}
+
+
+ul li a {
+  display: block;
+  color: white;
+  /* text-align: center; */
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+
+#wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+.banner {
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  top: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.banner img {
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+}
+
+.h2 {
+  text-align: center;
+}
+
+#content {
+  margin-top: 60px;
+}
+
+.red {
+  color: red;
+}
+
+p {
+  text-align: left;
+  margin-left: 180px;
+  font-family: Nunito;
+}
+
+.image {
+  filter: grayscale(50%);  
+}
+
+
+.home {
+  text-decoration: underline;
+  color: rgb(255, 0, 0);
+  font-size: 14pt;
+}
+
+.gameplay {
+  text-decoration: underline;
+  color: rgb(255, 0, 0);
+  font-size: 14pt;
+}
+
+.ranks {
+  text-decoration: underline;
+  color: rgb(255, 0, 0);
+  font-size: 14pt;
+}
+
+.comp {
+  text-decoration: underline;
+  color: rgb(255, 0, 0);
+  font-size: 14pt;
+}
+
+.citations {
+  text-decoration: underline;
+  color: rgb(255, 0, 0);
+  font-size: 14pt;
+}
+
+.table {
+  margin: auto;
+  padding: 0;
+}
+#shock1 {
+  animation-name: shock1;
+  animation-duration: 3s;
+  animation-iteration-count: 2;
+}
+.image2 {
+  filter: saturate(80%);
+  display: inline-block;
+
+  animation: shock1 2s linear 2;
+}
+.image3 {
+  filter: saturate(80%);
+  display: inline-block;
+
+  animation: shock2 2s linear 2;
+}
+@keyframes shock1 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes shock2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
